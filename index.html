@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<title>【诚邀赴宴】陈观兴 & 邬少燕 婚宴邀请函（11月13日 18:00 吴川振文边埇村）</title>
+<meta name="description" content="佳期已定，略备薄酌。2026年11月13日（星期五）18:00 入席开饭 · 广东省吴川市振文镇边埇村，诚邀您与家人拨冗光临！" />
+<meta property="og:title" content="【诚邀赴宴】陈观兴 & 邬少燕 婚宴邀请函" />
+<meta property="og:description" content="2026年11月13日（星期五）18:00 入席开饭 · 广东省吴川市振文镇边埇村" />
+<meta property="og:image" content="https://gxcaesar.github.io/wedding-invitation/media/share_thumb.jpg" />
+<meta property="og:type" content="website" />
+<style>
+  :root {
+    --bg: #131011;
+    --card: #1D181A;
+    --ivory: #FAF6EF;
+    --gold: #D8B476;
+    --gold-dim: rgba(216, 180, 118, 0.38);
+    --crimson: #9E242A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg);
+    color: var(--ivory);
+    font-family: "Songti SC", "STSong", "Noto Serif SC", "PingFang SC", -apple-system, serif;
+    line-height: 1.68;
+    padding-bottom: 92px;
+    overflow-x: hidden;
+  }
+  .app-shell { max-width: 540px; margin: 0 auto; position: relative; }
+
+  /* Floating Rotating Vinyl Music Button */
+  .music-fab {
+    position: fixed; top: 16px; right: 16px; width: 44px; height: 44px;
+    border-radius: 50%; background: rgba(158, 36, 42, 0.92);
+    border: 1.5px solid var(--gold); color: #FFF8EC;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; z-index: 900; cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  }
+  .music-fab.playing { animation: spin 6s linear infinite; }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  /* Hero Section */
+  .hero {
+    position: relative; min-height: 86vh; display: flex; flex-direction: column;
+    justify-content: flex-end; padding: 36px 22px 42px; text-align: center;
+    background: linear-gradient(180deg, rgba(16,12,12,0.22) 0%, rgba(16,12,12,0.08) 42%, rgba(19,16,17,0.98) 100%),
+                url('media/g1.jpg') center/cover no-repeat;
+  }
+  .xi-seal {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--crimson);
+    border: 2px solid #F5E3C2; color: #FFF8EC; font-size: 28px; font-weight: bold;
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
+  .hero-tag { font-size: 11px; letter-spacing: 4px; color: var(--gold); margin-bottom: 6px; }
+  .hero-names { font-size: 34px; font-weight: bold; letter-spacing: 5px; color: #FFFDF9; margin-bottom: 6px; }
+  .hero-sub { font-size: 17px; color: var(--gold); letter-spacing: 5px; margin-bottom: 12px; }
+  .hero-meta { font-size: 15px; color: #F5EFE6; margin-bottom: 4px; }
+  .hero-loc { font-size: 16px; font-weight: bold; color: #F5E3C2; }
+
+  /* Card Sections */
+  .section-card {
+    margin: 18px 14px; padding: 26px 16px; background: var(--card);
+    border: 1px solid var(--gold-dim); border-radius: 16px; text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.32);
+  }
+  .sec-en { font-size: 11px; letter-spacing: 3px; color: var(--gold); margin-bottom: 4px; }
+  .sec-title { font-size: 21px; font-weight: bold; letter-spacing: 3px; color: #FFFDF8; margin-bottom: 8px; }
+  .sec-desc { font-size: 13px; color: #B5A798; margin-bottom: 16px; }
+
+  /* Video Switcher & Player */
+  .vid-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 14px; }
+  .vid-tab {
+    padding: 7px 16px; border-radius: 999px; font-size: 13px;
+    border: 1px solid var(--gold); color: var(--gold); background: transparent; cursor: pointer;
+  }
+  .vid-tab.active { background: var(--crimson); color: #fff; border-color: var(--gold); font-weight: bold; }
+  .video-box {
+    width: 100%; border-radius: 12px; overflow: hidden;
+    border: 1.5px solid var(--gold); background: #000;
+  }
+  .video-box video { width: 100%; display: block; max-height: 72vh; }
+
+  /* 16:9 Magazine Cover Showcase */
+  .mag-card { margin-bottom: 16px; }
+  .mag-card img {
+    width: 100%; border-radius: 10px; border: 1.5px solid var(--gold);
+    display: block; cursor: pointer;
+  }
+  .mag-lbl { font-size: 13px; color: var(--gold); margin-top: 8px; letter-spacing: 1px; }
+
+  /* Ivory Formal Invitation Card */
+  .ivory-card {
+    background: var(--ivory); color: #2A2320; border: 2px solid #C69C5D;
+  }
+  .ivory-card .sec-title { color: var(--crimson); }
+  .info-box {
+    background: #FFFDF9; border: 1.5px solid #DEC49A; border-radius: 12px;
+    padding: 12px 14px; text-align: left; margin-top: 14px;
+  }
+  .info-row {
+    display: flex; padding: 9px 0; border-bottom: 1px solid #EFE5D4; font-size: 14.5px;
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-k { width: 82px; font-weight: bold; color: #AD8240; flex-shrink: 0; }
+  .info-v { font-weight: bold; color: #2A2320; }
+  .info-v.red { color: var(--crimson); font-size: 15.5px; }
+
+  /* Calendar */
+  .cal-table { width: 100%; max-width: 340px; margin: 18px auto 12px; border-collapse: collapse; }
+  .cal-table th { font-size: 11px; color: #8C7D70; padding-bottom: 8px; border-bottom: 1px solid #DEC49A; }
+  .cal-table td { padding: 8px 0; font-size: 15px; color: #2A2320; text-align: center; }
+  .day-13 {
+    display: inline-flex; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--crimson); color: #fff; font-weight: bold;
+    align-items: center; justify-content: center;
+    box-shadow: 0 0 0 2px var(--ivory), 0 0 0 3.5px #C69C5D;
+  }
+
+  /* Countdown */
+  .cd-row { display: flex; justify-content: center; gap: 10px; margin: 14px 0 18px; }
+  .cd-item {
+    background: #FFFDF9; border: 1px solid #DEC49A; border-radius: 8px;
+    min-width: 62px; padding: 8px 6px;
+  }
+  .cd-num { font-size: 20px; font-weight: bold; color: var(--crimson); }
+  .cd-unit { font-size: 11px; color: #8C7D70; }
+
+  .btn-group { display: flex; gap: 10px; justify-content: center; margin-top: 12px; }
+  .action-btn {
+    flex: 1; padding: 11px 10px; border-radius: 999px; font-size: 14px; font-weight: bold;
+    text-decoration: none; text-align: center; cursor: pointer; border: none;
+  }
+  .action-btn.primary { background: var(--crimson); color: #fff; border: 1px solid var(--gold); }
+  .action-btn.outline { background: #FFFDF9; color: var(--crimson); border: 1.5px solid var(--crimson); }
+
+  /* Horizontal Scroll Suite */
+  .suite-scroll {
+    display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .suite-item { flex: 0 0 210px; }
+  .suite-item img {
+    width: 210px; height: 373px; object-fit: cover;
+    border-radius: 10px; border: 1.5px solid var(--gold);
+  }
+  .suite-item div { font-size: 12px; color: var(--gold); margin-top: 6px; }
+
+  /* Dynamic Cinema Stage */
+  .cinema-stage {
+    position: relative; width: 100%; height: 420px; border-radius: 12px;
+    overflow: hidden; border: 1.5px solid var(--gold); background: #000;
+  }
+  .cinema-stage img {
+    width: 100%; height: 100%; object-fit: cover;
+    animation: kbEffect 7s ease-in-out infinite;
+  }
+  @keyframes kbEffect {
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.08) translateY(-6px); }
+    100% { transform: scale(1.0); }
+  }
+  .cinema-caption {
+    position: absolute; bottom: 0; left: 0; right: 0; padding: 30px 14px 14px;
+    background: linear-gradient(180deg, transparent, rgba(14,10,10,0.92));
+  }
+
+  /* Sticky Bottom Bar */
+  .bottom-nav {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: rgba(20, 16, 17, 0.96); border-top: 1px solid var(--gold-dim);
+    padding: 10px 16px calc(12px + env(safe-area-inset-bottom));
+    display: flex; gap: 12px; z-index: 890; max-width: 540px; margin: 0 auto;
+  }
+  .nav-pill {
+    flex: 1; padding: 11px 0; border-radius: 999px; font-size: 14px; font-weight: bold;
+    text-align: center; cursor: pointer; text-decoration: none; border: none;
+  }
+  .nav-pill.share { background: var(--crimson); color: #FFFDF9; border: 1px solid var(--gold); }
+  .nav-pill.map { background: var(--gold); color: #1A1412; }
+
+  /* Fullscreen Lightbox Modal */
+  .lightbox {
+    position: fixed; inset: 0; background: rgba(8,6,6,0.95);
+    display: none; flex-direction: column; align-items: center; justify-content: center;
+    z-index: 1000; padding: 16px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 82vh; border-radius: 8px; border: 1px solid var(--gold); }
+  .lightbox-tip { color: var(--gold); font-size: 13px; margin-top: 12px; }
+
+  /* WeChat Share Guide Overlay */
+  .share-mask {
+    position: fixed; inset: 0; background: rgba(10,8,8,0.88);
+    display: none; flex-direction: column; align-items: flex-end;
+    padding: 24px 28px; z-index: 1050; color: #fff;
+  }
+  .share-mask.open { display: flex; }
+  .share-box {
+    width: 100%; max-width: 360px; margin: 20px auto 0;
+    background: #231C1E; border: 1.5px solid var(--gold); border-radius: 16px;
+    padding: 24px 20px; text-align: center;
+  }
+</style>
+</head>
+<body onclick="ensureAudioPlaying()">
+<!-- Hidden 400x400 image for WeChat link thumbnail scraper -->
+<div style="display:none;"><img src="media/share_thumb.jpg" alt="陈观兴 & 邬少燕 婚宴邀请函" /></div>
+
+<audio id="bgm" src="media/bgm.mp3" loop preload="auto"></audio>
+<div class="music-fab playing" id="musicFab" onclick="toggleMusic(event)">♫</div>
+
+<div class="app-shell">
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="xi-seal">囍</div>
+    <div class="hero-tag">WEDDING INVITATION · 2026.11.13</div>
+    <h1 class="hero-names">陈观兴 &amp; 邬少燕</h1>
+    <div class="hero-sub">佳 期 已 定 · 诚 邀 赴 宴</div>
+    <div class="hero-meta">2026年11月13日（星期五） 18:00 入席开饭</div>
+    <div class="hero-loc">📍 广东省吴川市振文镇边埇村</div>
+  </section>
+
+  <!-- 2. FORMAL BANQUET INVITATION & CALENDAR -->
+  <section class="section-card ivory-card">
+    <div class="sec-en" style="color:#AD8240;">CORDIAL INVITATION</div>
+    <div class="sec-title">陈观兴 &amp; 邬少燕 · 诚挚敬邀</div>
+    <p style="font-size:14px; color:#66584D;">良辰吉日，略备薄酌。诚邀您与家人拨冗出席我们的简约婚宴，共叙情谊，同享喜悦。</p>
+
+    <div class="info-box">
+      <div class="info-row"><div class="info-k">新郎新娘</div><div class="info-v">新郎：陈观兴 &nbsp;·&nbsp; 新娘：邬少燕</div></div>
+      <div class="info-row"><div class="info-k">入席时间</div><div class="info-v">2026年11月13日（星期五） 18:00 入席开饭</div></div>
+      <div class="info-row"><div class="info-k">婚宴地点</div><div class="info-v red">广东省吴川市振文镇边埇村</div></div>
+      <div class="info-row"><div class="info-k">婚宴流程</div><div class="info-v">17:30 迎宾欢聚 &nbsp;·&nbsp; 18:00 准时开席</div></div>
+    </div>
+
+    <table class="cal-table">
+      <thead>
+        <tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th style="color:var(--crimson);">FRI</th><th>SAT</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td><span class="day-13">13</span></td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="cd-row">
+      <div class="cd-item"><div class="cd-num" id="cd-d">--</div><div class="cd-unit">天</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-h">--</div><div class="cd-unit">时</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-m">--</div><div class="cd-unit">分</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-s">--</div><div class="cd-unit">秒</div></div>
+    </div>
+
+    <div class="btn-group">
+      <a class="action-btn primary" href="https://uri.amap.com/search?keyword=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%90%B4%E5%B7%9D%E5%B8%82%E6%8C%AF%E6%96%87%E9%95%87%E8%BE%B9%E5%9F%87%E6%9D%91" target="_blank">📍 一键开启地图导航</a>
+      <button class="action-btn outline" onclick="copyAddr()">📋 复制婚宴地址</button>
+    </div>
+  </section>
+
+  <!-- 3. WEDDING VIDEOS (VERTICAL + HORIZONTAL) -->
+  <section class="section-card">
+    <div class="sec-en">WEDDING FILM · 婚宴纪念大片</div>
+    <div class="sec-title">双版本婚宴视频在线播放</div>
+    <div class="sec-desc">点击播放视频时将自动静音背景音乐，可切换竖屏微信版与横屏电影版</div>
+    <div class="vid-tabs">
+      <button class="vid-tab active" id="tabVert" onclick="switchVideo('vert')">📱 竖屏微信版 (9:16)</button>
+      <button class="vid-tab" id="tabHoriz" onclick="switchVideo('horiz')">🎬 横屏电影版 (16:9)</button>
+    </div>
+    <div class="video-box">
+      <video id="weddingVid" src="media/video_vertical.mp4" poster="media/inv_01.jpg" controls playsinline webkit-playsinline x5-video-player-type="h5-page" preload="metadata"></video>
+    </div>
+  </section>
+
+  <!-- 4. 16:9 MAGAZINE COVER & AD CAMPAIGN INVITATIONS -->
+  <section class="section-card">
+    <div class="sec-en">16:9 MAGAZINE CAMPAIGN · 时尚杂志跨页大片</div>
+    <div class="sec-title">16:9 杂志封面与黑金高定邀请函</div>
+    <div class="sec-desc">点击下方图片可全屏放大鉴赏或长按保存高清原图</div>
+    <div class="mag-card" onclick="openLightbox('media/mag_vogue.jpg')">
+      <img src="media/mag_vogue.jpg" alt="16:9 VOGUE 时尚杂志封面版" loading="lazy" />
+      <div class="mag-lbl">✦ 款式 06：16:9 VOGUE 时尚杂志封面跨页版（点击全屏）</div>
+    </div>
+    <div class="mag-card" onclick="openLightbox('media/mag_obsidian.jpg')">
+      <img src="media/mag_obsidian.jpg" alt="16:9 黑金摩登高定广告大片版" loading="lazy" />
+      <div class="mag-lbl">✦ 款式 07：16:9 黑金摩登高定广告大片版（点击全屏）</div>
+    </div>
+  </section>
+
+  <!-- 5. 5 VERTICAL INVITATIONS SUITE -->
+  <section class="section-card">
+    <div class="sec-en">INVITATION SUITE · 五款竖版典藏请柬</div>
+    <div class="sec-title">竖版邀请函与四章长卷画廊</div>
+    <div class="sec-desc">左右滑动浏览，点击任意请柬可全屏放大或长按保存转发</div>
+    <div class="suite-scroll">
+      <div class="suite-item" onclick="openLightbox('media/inv_08_qr.jpg')"><img src="media/inv_08_qr.jpg" /><div>微信扫码互动版</div></div>
+      <div class="suite-item" onclick="openLightbox('media/inv_01.jpg')"><img src="media/inv_01.jpg" /><div>01 · 雪山圣洁极简版</div></div>
+      <div class="suite-item" onclick="openLightbox('media/inv_02.jpg')"><img src="media/inv_02.jpg" /><div>02 · 东方雅韵庭院版</div></div>
+      <div class="suite-item" onclick="openLightbox('media/inv_03.jpg')"><img src="media/inv_03.jpg" /><div>03 · 湖山绯红画报版</div></div>
+      <div class="suite-item" onclick="openLightbox('media/inv_04.jpg')"><img src="media/inv_04.jpg" /><div>04 · 翠湖森影赫本版</div></div>
+      <div class="suite-item" onclick="openLightbox('media/inv_05.jpg')"><img src="media/inv_05.jpg" /><div>05 · 四章映画微信长卷</div></div>
+    </div>
+  </section>
+
+  <!-- 6. 60FPS KEN BURNS DYNAMIC THEATER -->
+  <section class="section-card">
+    <div class="sec-en">FOUR CHAPTERS · 四章映画自动轮播</div>
+    <div class="sec-title">古院 · 翠湖 · 雪山 · 绯云</div>
+    <div class="cinema-stage" onclick="openLightbox(slides[curSlide].u)">
+      <img id="kbImg" src="media/g1.jpg" alt="slide" />
+      <div class="cinema-caption">
+        <div id="kbCh" style="color:var(--gold); font-size:14px; letter-spacing:3px;">叁 · 雪 山 盟 誓</div>
+        <div id="kbVerse" style="color:#fff; font-size:15px; margin-top:3px;">雪山为证，长风为媒，许一世白首之约</div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding: 28px 16px 24px; color:#9C8E80; font-size:13px;">
+    <div style="color:var(--gold); font-size:15px; letter-spacing:3px; margin-bottom:6px;">喜备薄酌迎挚友 · 同沐春风叙良辰</div>
+    <div>陈观兴 &amp; 邬少燕 敬邀 | 2026.11.13 广东省吴川市振文镇边埇村</div>
+  </footer>
+</div>
+
+<!-- Sticky Bottom Forwarding & Navigation Bar -->
+<div class="bottom-nav">
+  <button class="nav-pill share" onclick="openShareGuide()">💌 一键转发微信好友</button>
+  <a class="nav-pill map" href="https://uri.amap.com/search?keyword=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%90%B4%E5%B7%9D%E5%B8%82%E6%8C%AF%E6%96%87%E9%95%87%E8%BE%B9%E5%9F%87%E6%9D%91" target="_blank">🧭 导航去边埇村婚宴</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="preview" />
+  <div class="lightbox-tip">长按图片可保存至手机相册或直接发送给朋友 · 点击任意处关闭</div>
+</div>
+
+<!-- WeChat Share Guide Modal -->
+<div class="share-mask" id="shareMask" onclick="closeShareGuide()">
+  <div style="font-size:22px; color:var(--gold); font-weight:bold; margin-right:8px;">↗ 点击右上角「···」转发给微信好友或朋友圈</div>
+  <div class="share-box" onclick="event.stopPropagation()">
+    <div style="font-size:18px; color:var(--gold); font-weight:bold; margin-bottom:10px;">已为您复制微信邀请文案与链接！</div>
+    <p style="font-size:13.5px; color:#E8DFD1; text-align:left; background:#161213; padding:12px; border-radius:8px; border:1px solid var(--gold-dim);">
+      【诚邀赴宴】佳期已定，略备薄酌！陈观兴 &amp; 邬少燕 诚邀您与家人参加我们的简约婚宴：<br/>
+      📅 时间：2026年11月13日（星期五）18:00 入席开饭<br/>
+      📍 地点：广东省吴川市振文镇边埇村<br/>
+      💌 点击开启互动音乐视频邀请函：https://gxcaesar.github.io/wedding-invitation/
+    </p>
+    <button class="action-btn primary" style="width:100%; margin-top:14px;" onclick="closeShareGuide()">我知道了（去粘贴或点右上角转发）</button>
+  </div>
+</div>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  const musicFab = document.getElementById('musicFab');
+  const weddingVid = document.getElementById('weddingVid');
+  let audioStarted = false;
+
+  function ensureAudioPlaying() {
+    if (!audioStarted && weddingVid.paused) {
+      bgm.play().then(() => {
+        audioStarted = true;
+        musicFab.classList.add('playing');
+      }).catch(() => {});
+    }
+  }
+
+  // Automatic playback inside WeChat built-in browser on iOS & Android
+  document.addEventListener('WeixinJSBridgeReady', function () {
+    ensureAudioPlaying();
+  }, false);
+
+  function toggleMusic(e) {
+    e.stopPropagation();
+    if (bgm.paused) {
+      bgm.play();
+      musicFab.classList.add('playing');
+      audioStarted = true;
+    } else {
+      bgm.pause();
+      musicFab.classList.remove('playing');
+    }
+  }
+
+  // Pause BGM when user plays the embedded wedding video
+  weddingVid.addEventListener('play', () => {
+    if (!bgm.paused) {
+      bgm.pause();
+      musicFab.classList.remove('playing');
+    }
+  });
+
+  function switchVideo(mode) {
+    const tV = document.getElementById('tabVert');
+    const tH = document.getElementById('tabHoriz');
+    if (mode === 'vert') {
+      tV.classList.add('active'); tH.classList.remove('active');
+      weddingVid.src = 'media/video_vertical.mp4';
+      weddingVid.poster = 'media/inv_01.jpg';
+    } else {
+      tH.classList.add('active'); tV.classList.remove('active');
+      weddingVid.src = 'media/video_horizontal.mp4';
+      weddingVid.poster = 'media/mag_vogue.jpg';
+    }
+    weddingVid.play();
+  }
+
+  const slides = [
+    { u: 'media/g1.jpg', c: '叁 · 雪 山 盟 誓', v: '雪山为证，长风为媒，许一世白首之约' },
+    { u: 'media/g2.jpg', c: '叁 · 雪 山 盟 誓', v: '白纱轻拂处，皆是温柔与笃定' },
+    { u: 'media/g3.jpg', c: '壹 · 古 院 良 辰', v: '于千万人之中，遇见所遇之人' },
+    { u: 'media/g4.jpg', c: '壹 · 古 院 良 辰', v: '轩窗剪影，红灯映喜，共结百年之好' },
+    { u: 'media/g5.jpg', c: '贰 · 翠 湖 森 影', v: '翠湖微澜，笑意盈盈，眼里皆是星辰' },
+    { u: 'media/g6.jpg', c: '贰 · 翠 湖 森 影', v: '碧水映双影，静好共此生' },
+    { u: 'media/g7.jpg', c: '肆 · 绯 云 共 赴', v: '红衣映碧海，山河万里共从容' },
+    { u: 'media/g8.jpg', c: '肆 · 绯 云 共 赴', v: '往后余生，三餐四季，皆是你' }
+  ];
+  let curSlide = 0;
+  setInterval(() => {
+    curSlide = (curSlide + 1) % slides.length;
+    document.getElementById('kbImg').src = slides[curSlide].u;
+    document.getElementById('kbCh').textContent = slides[curSlide].c;
+    document.getElementById('kbVerse').textContent = slides[curSlide].v;
+  }, 3600);
+
+  function updateCountdown() {
+    const target = new Date('2026-11-13T18:00:00+08:00').getTime();
+    const diff = Math.max(0, target - Date.now());
+    document.getElementById('cd-d').textContent = Math.floor(diff / 86400000);
+    document.getElementById('cd-h').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
+    document.getElementById('cd-m').textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
+    document.getElementById('cd-s').textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  function copyText(txt) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).catch(() => {});
+    }
+    const ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  function copyAddr() {
+    copyText('广东省吴川市振文镇边埇村');
+    alert('已复制婚宴地址：广东省吴川市振文镇边埇村');
+  }
+
+  function openLightbox(url) {
+    document.getElementById('lightboxImg').src = url;
+    document.getElementById('lightbox').classList.add('open');
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+
+  function openShareGuide() {
+    const shareTxt = '【诚邀赴宴】佳期已定，略备薄酌！陈观兴 & 邬少燕 诚邀您与家人参加我们的简约婚宴：\n📅 时间：2026年11月13日（星期五）18:00 入席开饭\n📍 地点：广东省吴川市振文镇边埇村\n💌 点击开启互动音乐视频邀请函：https://gxcaesar.github.io/wedding-invitation/';
+    copyText(shareTxt);
+    document.getElementById('shareMask').classList.add('open');
+  }
+  function closeShareGuide() {
+    document.getElementById('shareMask').classList.remove('open');
+  }
+</script>
+</body>
+</html>
